@@ -1,0 +1,231 @@
+import { Service, ServiceCategory } from '@/types/service';
+
+export const services: Service[] = [
+  {
+    id: '1',
+    name: 'Gypsum Decorations',
+    nameAr: 'ديكورات جبس',
+    slug: 'gypsum-decorations',
+    description: 'Professional gypsum decoration services for homes and offices. From wall designs to ceiling decorations, we create elegant and modern interiors.',
+    descriptionAr: 'خدمات ديكورات جبس احترافية للمنازل والمكاتب. من تصاميم الجدران إلى زخارف الأسقف، نقدم مساحات أنيقة وعصرية.',
+    shortDescription: 'Starting from 5 JOD per sqm',
+    shortDescriptionAr: 'تبدأ من 5 دنانير للمتر',
+    price: 5,
+    executionTimeMin: 1,
+    executionTimeMax: 3,
+    type: 'Decoration',
+    typeAr: 'ديكور',
+    category: 'Gypsum',
+    categoryAr: 'جبس',
+    images: [
+      { id: '1', url: '/images/jips.png', alt: 'Gypsum decoration' },
+      { id: '2', url: '/placeholder.svg', alt: 'Ceiling gypsum design' }
+    ],
+    rating: 4.8,
+    reviewCount: 120,
+    featured: true
+  },
+  {
+    id: '2',
+    name: 'Plumbing Repair',
+    nameAr: 'إصلاح السباكة',
+    slug: 'plumbing-repair',
+    description: 'Reliable plumbing services for leaks, pipe replacement, and more.',
+    descriptionAr: 'خدمات سباكة موثوقة للتسريبات واستبدال الأنابيب والمزيد.',
+    shortDescription: 'Starting from 10 JOD',
+    shortDescriptionAr: 'تبدأ من 10 دنانير',
+    price: 10,
+    executionTimeMin: 1,
+    executionTimeMax: 3,
+    type: 'Repair',
+    typeAr: 'إصلاح',
+    category: 'Plumbing',
+    categoryAr: 'السباكة',
+    images: [
+      { id: '1', url: '/images/spak.png', alt: 'Plumber repairing pipes' },
+      { id: '2', url: '/placeholder.svg', alt: 'Sink installation' }
+    ],
+    rating: 4.7,
+    reviewCount: 90,
+    featured: true
+  },
+  {
+    id: '3',
+    name: 'Painting & Decorations',
+    nameAr: 'ديكورات الدهان',
+    slug: 'painting-decorations',
+    description: 'High-quality painting and wall decoration services.',
+    descriptionAr: 'خدمات دهان وزخرفة الجدران عالية الجودة.',
+    shortDescription: 'Starting from 1 JOD per sqm',
+    shortDescriptionAr: 'تبدأ من دينار للمتر',
+    price: 1,
+    executionTimeMin: 1,
+    executionTimeMax: 3,
+    type: 'Painting',
+    typeAr: 'دهان',
+    category: 'Painting',
+    categoryAr: 'دهان',
+    images: [
+      { id: '1', url: '/images/dhan.png', alt: 'Painting decoration' },
+      { id: '2', url: '/placeholder.svg', alt: 'Wall painting' }
+    ],
+    rating: 4.9,
+    reviewCount: 150,
+    featured: true
+  },
+  {
+    id: '4',
+    name: 'Tile Polishing & Refinishing',
+    nameAr: 'جلي وتلميع البلاط',
+    slug: 'tile-polishing',
+    description: 'Polishing and finishing services for tiles to restore shine and cleanliness.',
+    descriptionAr: 'خدمات جلي وتلميع البلاط لاستعادة اللمعان والنظافة.',
+    shortDescription: 'Starting from 1 JOD per sqm',
+    shortDescriptionAr: 'تبدأ من دينار للمتر',
+    price: 1,
+    executionTimeMin: 1,
+    executionTimeMax: 3,
+    type: 'Cleaning',
+    typeAr: 'تنظيف',
+    category: 'Tiles',
+    categoryAr: 'بلاط',
+    images: [
+      { id: '1', url: '/images/gali.png', alt: 'Tile polishing' },
+      { id: '2', url: '//images/jali.png', alt: 'Tile refinishing' }
+    ],
+    rating: 4.8,
+    reviewCount: 100,
+    featured: true
+  },
+  {
+    id: '5',
+    name: '3D Interior Design',
+    nameAr: 'تصميم الديكور ثلاثي الأبعاد',
+    slug: '3d-interior-design',
+    description: 'Professional 3D interior design for residential and commercial spaces.',
+    descriptionAr: 'خدمات تصميم داخلي ثلاثي الأبعاد للمنازل والمكاتب.',
+    shortDescription: 'Starting from 1 JOD, duration unspecified',
+    shortDescriptionAr: 'تبدأ من دينار، المدة غير محددة',
+    price: 1,
+    executionTimeMin: 0,
+    executionTimeMax: 0,
+    type: 'Design',
+    typeAr: 'تصميم',
+    category: '3D Design',
+    categoryAr: 'تصميم ثلاثي الأبعاد',
+    images: [
+      { id: '1', url: '/images/decor.png', alt: '3D interior design' },
+      { id: '2', url: '/placeholder.svg', alt: 'Interior modeling' }
+    ],
+    rating: 4.9,
+    reviewCount: 85,
+    featured: true
+  },
+  {
+    id: '6',
+    name: 'Electrical Services',
+    nameAr: 'خدمات الكهرباء',
+    slug: 'electrical-services',
+    description: 'Certified electricians for safe and reliable electrical installations.',
+    descriptionAr: 'كهربائيون معتمدون لتركيبات كهربائية آمنة وموثوقة.',
+    shortDescription: 'Starting from 10 JOD',
+    shortDescriptionAr: 'تبدأ من عشر دنانير',
+    price: 10,
+    executionTimeMin: 1,
+    executionTimeMax: 3,
+    type: 'Electrical',
+    typeAr: 'كهربائي',
+    category: 'Electricity',
+    categoryAr: 'كهرباء',
+    images: [
+      { id: '1', url: '/images/kh.png', alt: 'Electrician working' },
+      { id: '2', url: '/placeholder.svg', alt: 'Electrical installation' }
+    ],
+    rating: 4.8,
+    reviewCount: 120,
+    featured: true
+  },
+  {
+    id: '7',
+    name: 'Home Maintenance',
+    nameAr: 'الصيانة المنزلية',
+    slug: 'home-maintenance',
+    description: 'Professional home maintenance services including repairs and upgrades.',
+    descriptionAr: 'خدمات صيانة منزلية احترافية تشمل الإصلاحات والتطوير.',
+    shortDescription: 'Starting from 10 JOD',
+    shortDescriptionAr: 'تبدأ من عشرة دنانير',
+    price: 10,
+    executionTimeMin: 1,
+    executionTimeMax: 5,
+    type: 'Maintenance',
+    typeAr: 'صيانة',
+    category: 'Home Services',
+    categoryAr: 'خدمات المنزل',
+    images: [
+      { id: '1', url: '/images/s.png', alt: 'Home maintenance' },
+      { id: '2', url: '/placeholder.svg', alt: 'Repair service' }
+    ],
+    rating: 4.7,
+    reviewCount: 95,
+    featured: false
+  },
+  {
+    id: '8',
+    name: 'Flooring & Leveling',
+    nameAr: 'صب الأرضيات وتطبيع',
+    slug: 'flooring-leveling',
+    description: 'Professional flooring and leveling services for residential and commercial projects.',
+    descriptionAr: 'خدمات صب الأرضيات وتطبيع احترافية للمشاريع السكنية والتجارية.',
+    shortDescription: 'Starting from 10 JOD per sqm',
+    shortDescriptionAr: 'تبدأ من عشر دنانير للمتر',
+    price: 10,
+    executionTimeMin: 1,
+    executionTimeMax: 5,
+    type: 'Flooring',
+    typeAr: 'أرضيات',
+    category: 'Flooring',
+    categoryAr: 'صب الأرضيات',
+    images: [
+      { id: '1', url: '/images/pa.png', alt: 'Floor leveling' },
+      { id: '2', url: '/placeholder.svg', alt: 'Concrete floor' }
+    ],
+    rating: 4.8,
+    reviewCount: 90,
+    featured: true
+  },
+  {
+    id: '9',
+    name: 'Insulation & Epoxy',
+    nameAr: 'العزل والايبوكسي',
+    slug: 'insulation-epoxy',
+    description: 'High-quality insulation and epoxy flooring services with professional finishing.',
+    descriptionAr: 'خدمات العزل وتطبيق الايبوكسي عالية الجودة مع تشطيب احترافي.',
+    shortDescription: 'Starting from 3 JOD, duration 5 days',
+    shortDescriptionAr: 'تبدأ من 3 دنانير، المدة خمس أيام',
+    price: 3,
+    executionTimeMin: 5,
+    executionTimeMax: 5,
+    type: 'Insulation',
+    typeAr: 'عزل',
+    category: 'Flooring',
+    categoryAr: 'صب الأرضيات',
+    images: [
+      { id: '1', url: '/images/ap.png', alt: 'Epoxy flooring' },
+      { id: '2', url: '/placeholder.svg', alt: 'Insulation service' }
+    ],
+    rating: 4.7,
+    reviewCount: 60,
+    featured: false
+  }
+];
+
+export const serviceCategories: ServiceCategory[] = [
+  { id: '1', name: 'Gypsum', nameAr: 'جبس', icon: 'cube', image: '/placeholder.svg' },
+  { id: '2', name: 'Plumbing', nameAr: 'السباكة', icon: 'droplet', image: '/placeholder.svg' },
+  { id: '3', name: 'Painting', nameAr: 'دهان', icon: 'paint-brush', image: '/placeholder.svg' },
+  { id: '4', name: '3D Design', nameAr: 'تصميم ثلاثي الأبعاد', icon: 'cube', image: '/placeholder.svg' },
+  { id: '5', name: 'Electricity', nameAr: 'كهرباء', icon: 'lightning-bolt', image: '/placeholder.svg' },
+  { id: '6', name: 'Home Services', nameAr: 'خدمات المنزل', icon: 'home', image: '/placeholder.svg' },
+  { id: '7', name: 'Flooring', nameAr: 'صب الأرضيات', icon: 'square', image: '/placeholder.svg' },
+  { id: '8', name: 'Insulation', nameAr: 'العزل', icon: 'shield', image: '/placeholder.svg' }
+];
